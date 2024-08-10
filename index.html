@@ -27,6 +27,10 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <!--Bootstrap CSS-->
+  
+
   <!-- =======================================================
   * Template Name: BizLand
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -180,7 +184,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Sambutan Sekolah</h2>
-        <p><span>Sambutan Kepala Sekolah Sekolah</span> <span class="description-title">JAYA NEGARA MAKASSAR</span></p>
+        <p><span>Sambutan Kepala Sekolah</span> <span class="description-title">JAYA NEGARA MAKASSAR</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -223,17 +227,37 @@
             <i class="bi bi-person-circle"></i>
             <div class="stats-item">
               <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Jumlah Siswa</p>
+              <p>Jumlah Siswa TK</p>
             </div>
           </div><!-- End Stats Item -->
 
+          
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-person-circle"></i>
             <div class="stats-item">
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Jumlah Guru</p>
+              <p>Jumlah Siswa SD</p>
             </div>
           </div><!-- End Stats Item -->
+
+          
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-person-circle"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Jumlah Siswa SMP</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-person-circle"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Jumlah Siswa SMA</p>
+            </div>
+          </div><!-- End Stats Item -->
+
 
         </div>
       </div>
@@ -274,7 +298,7 @@
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/default.jpg" class="testimonial-img" alt="">
                 <h3>Alfina Febrianty</h3>
-                <h4>Guru SD</h4>
+                <h4>Guru SMP</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -376,12 +400,26 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-tk">TK</li>
             <li data-filter=".filter-app">SD</li>
             <li data-filter=".filter-product">SMP</li>
             <li data-filter=".filter-branding">SMA</li>
+            <li data-filter=".filter-guru">Guru</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tk">
+              <img src="sekolah/tk1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kegiatan TK</h4>
+                <p>Wisuda</p>
+                <a href="sekolah/tk1.jpg" title="Kegiatan Wisuda" data-gallery="portfolio-gallery-tk" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="kegiatanwisudatk.html#kegiatan" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/sd1.jpg" class="img-fluid" alt="">
@@ -419,6 +457,17 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-guru">
+              <img src="sekolah/program-pengimbasan-sekolah-penggerak-angkatan-1/kegiatan1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kegiatan Sekolah</h4>
+                <p>Kegiatan Pengimbasan Sekolah Penggerak Angkatan 1</p>
+                <a href="sekolah/program-pengimbasan-sekolah-penggerak-angkatan-1/kegiatan1.jpeg" title="Kegiatan Pengimbasan Sekolah Penggerak Angkatan 1" data-gallery="portfolio-gallery-guru" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="kegiatansekolahguru.html#kegiatan" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/smp2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -436,9 +485,9 @@
                 <a href="assets/img/masonry-portfolio/sma2.jpg" title="Kegiatan SMA 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div>
-            
-            
             <!-- End Portfolio Item -->
+
+            
 
           </div><!-- End Portfolio Container -->
 
@@ -543,20 +592,40 @@
             </div>
           </div>
           <div class="member-info">
-            <h4>Guru SD</h4>
+            <h4>Guru TK</h4>
             <span>Nama Guru</span>
           </div>
         </div>
       </div><!-- End profileguru Member -->
+      
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="guruprofile-member">
           <div class="member-img">
             <img src="assets/img/team/default.jpg" class="img-fluid" alt="">
             <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Guru SD</h4>
+            <span>Nama Guru</span>
+          </div>
+        </div>
+      </div><!-- End profileguru Member -->
+
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="guruprofile-member">
+          <div class="member-img">
+            <img src="assets/img/team/default.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
           <div class="member-info">
@@ -571,10 +640,10 @@
           <div class="member-img">
             <img src="assets/img/team/default.jpg" class="img-fluid" alt="">
             <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
           <div class="member-info">
