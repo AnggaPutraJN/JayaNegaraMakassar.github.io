@@ -1445,6 +1445,116 @@ section,
   bottom: 0;
 }
 
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# guruprofile Section
+--------------------------------------------------------------*/
+.guruprofile .guruprofile-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.guruprofile .guruprofile-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.guruprofile .guruprofile-filters li:hover,
+.guruprofile .guruprofile-filters li.filter-active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.guruprofile .guruprofile-filters li:first-child {
+  margin-left: 0;
+}
+
+.guruprofile .guruprofile-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .guruprofile .guruprofile-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.guruprofile .guruprofile-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.guruprofile .guruprofile-item .guruprofile-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+}
+
+.guruprofile .guruprofile-item .guruprofile-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.guruprofile .guruprofile-item .guruprofile-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.guruprofile .guruprofile-item .guruprofile-info .preview-link,
+.guruprofile .guruprofile-item .guruprofile-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.guruprofile .guruprofile-item .guruprofile-info .preview-link:hover,
+.guruprofile .guruprofile-item .guruprofile-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.guruprofile .guruprofile-item .guruprofile-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+.guruprofile .guruprofile-item:hover .guruprofile-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
